@@ -41,11 +41,11 @@ This is a **Car Show Webpage** project designed to showcase cars, their features
 ```
 car-show-webpage/
 ├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # Custom styles
-├── js/
-│   └── script.js       # JavaScript functionality
-├── images/
+├── styles.css      # Custom styles
+│   
+├── app.js # JavaScript functionality
+│
+├── img/
 │   └── ...             # Image assets for the cars
 └── README.md           # Project documentation
 ```
