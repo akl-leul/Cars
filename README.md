@@ -23,12 +23,12 @@ This is a **Car Show Webpage** project designed to showcase cars, their features
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/<your-username>/car-show-webpage.git
+   git clone https://github.com/akl-leul/Cars
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd car-show-webpage
+   cd Cars
    ```
 
 3. Open the `index.html` file in your browser to view the webpage:
@@ -49,14 +49,6 @@ car-show-webpage/
 │   └── ...             # Image assets for the cars
 └── README.md           # Project documentation
 ```
-
-## Screenshots
-
-### Homepage
-![Homepage Screenshot](images/homepage-screenshot.png)
-
-### Car Details
-![Car Details Screenshot](images/car-details-screenshot.png)
 
 ## Future Enhancements
 
