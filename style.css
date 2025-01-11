@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Lobster&family=Matemasie&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    list-style: none;   
+}
+body{ 
+    background: url(img/background1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(0px);
+}
+    
+.header{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+}
+.header nav{
+    justify-content: center;  
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    font-family: "Lobster", sans-serif;
+    font-size: 25px;
+}
+.header nav li{
+    list-style: none;
+    float: right;
+}
+.header nav li:nth-child(1){
+    margin-right: 600px;
+    font-size: 55;
+    color: #023047;
+}
+.header nav li a{
+    color: white;
+    text-decoration: none;
+}
+.header nav li a:hover{
+    color: #023047;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #023047);
+
+}
+/*main body*/
+ 
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #219ebc;
+    padding: 10px;
+  
+} 
+.container p{
+    color: #fff;
+    font-size: 21px;
+}
+.container button{
+    background-color: #fb8500;
+    width: 150px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    font-weight: 700;
+    border: 3px solid #fb8500;
+    font-family: bootstrap-icons !important;
+}
+ 
+.container button:hover{
+    background-color: transparent;
+    color: #fb8500;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #023047);
+   
+}
+ 
+.container-left{
+    width: 50%;
+    animation: slideIn 1s ease-in;
+}
+@keyframes slideIn{
+    0% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+.container-right{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.container-right form{ 
+    display: flex;
+    flex-wrap:  nowrap;
+    width: 600px;
+    padding: 30px;
+ 
+}
+.container-right form input{
+    width: 90%;
+    padding: 10px;
+    height: 40px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    transition: all .5s ease;
+}
+.container-right form input:focus{
+    outline: 2px solid #fb8500;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px #fb8500;
+}
+.container-right form button{
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+/*Cars*/
+.card{
+     
+    width: 100%;
+    height:  fit-content;
+    gap: 10px;
+    display: flex;
+    font-family: "Lobster", sans-serif;
+    flex-direction: column;
+}
+.card-container{
+    display: flex;
+    
+    width: 100%;
+    gap: 20px;
+}
+.card-image{
+    cursor: pointer;
+    width: 33.33%;
+    height: 200px;
+    box-shadow: 0 0 10px #8a8888;
+    transition: all .3s ease;
+    border-radius: 12px;
+}
+.card-image img{
+    width: 100%;
+    margin-top: 30px;
+    animation: cars 1s ease;
+    
+}
+#im.animate{
+    
+    animation: cars 1s ease;
+}
+@keyframes cars{
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+ 
+.card-image:hover {
+    filter: drop-shadow(0 0 12px #3d3d3d);
+    animation: run 3s ease infinite;
+    background: linear-gradient(rgba(255, 255, 255, 0.411), rgba(0, 0, 0, 0.329));
+}
+@keyframes run{
+     from{
+        margin-top: 0;
+     }
+     to{
+        margin-top: -40px;
+     }
+}
+#about{
+    width: 100%;
+    height: 100vh; 
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 0;
+    font-family: "Lobster", sans-serif;  
+    background: url(img/background2.jpg);
+    background-size: cover;
+}
+.about-info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    color: #023047;
+} 
+.contact{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+}
+.contact-info{
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #023047;
+
+}
+.contact-info p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact-info a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.contact-info a:hover{
+    color: #585858;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+}
